@@ -1,1 +1,54 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<meta http-qeuiv="X-UA-Compatible" content="ie=edge">
+	<title>Form</title>
+	<style>
+		img {
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<img src="http://www.nasa.gov/sites/default/files/thumbnails/image/space-apps-challenge2_0.jpg" width="300" height="300" alt = "Computer Hope" class = "center">
+	<p></p>
+	<div>
+		<p>This website created for educational purposes only , more specifically , about the international space apps hackathon which took place 1-2 october in 2022.Our challenge was to develop an application that uses ISS's amateur radio station datasets to construct and display images of Earth's ionosphere.</p>
+
+		<p><strong>How to use the tool : </strong></p>
+		<p>The files you can upload MUST be in .csv form. After you hit the submit button the algorithm will transform the data that you inserted into an image that you can download or save in your computer.</p>
+		<p><strong>File Upload :</strong></p>
+	</div>
+	<form action="results.html" method="GET">
+		<div>
+			<label for="data">Data(CSV)</label>
+			<input type="file" ID="fileSelect" accept=".xlsx, .xls, .csv"/>
+		</div>
+		<div>
+			<p>By tapping Accept you acknowledge that you have read our privacy policy and agree to the Terms of Sevice.</p>
+			<div>
+			</div>
+			<p><input id="field_terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" type="checkbox" required name="terms"> I accept the <u>Terms and Conditions</u></p>
+<p><input type="submit"></p>
+</form>
+
+<script>
+
+  document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
+
+</script>
+			</form>	
+		</div>
+	</form>
+	<hr>Website by Spiros Maggioros , Efthymios Ntokas and Katerina Michou. For educational purposes only.
+	<p>Find more about our team: <a href="https://2022.spaceappschallenge.org/challenges/2022-challenges/radio-enthusiasts/teams/jean-baptiste-joseph-fourier/project" target="_blank">here!</a></p>
+	<p><strong>Contact the team members: </strong></p>
+	<p>Spiros Maggioros: LinkedIn:<a href="https://www.linkedin.com/in/spiros-maggioros-8b4107238" target="_blank">LinkedIn profile</a>, Facebook:<a href="https://www.facebook.com/spiros.maggioros/" target="_blank">Facebook Profile</a></p>
+	<p>Efthymios Ntokas: LinkedIn:<a href="https://www.linkedin.com/in/efthymios-ntokas-752137239/">LinkedIn</a></p>
+	<p>Katerina Michou: awaits</p>
+</body>
